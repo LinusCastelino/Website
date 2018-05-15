@@ -1,0 +1,14 @@
+#footerContainer{
+    background-color: white;
+    margin: 0%;
+    max-width: 100%;
+    text-align: center;
+}
+
+#footerText{
+    font-size: 10px;
+}
+
+img{
+    width: 2%
+}
