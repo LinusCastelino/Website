@@ -8,8 +8,9 @@
 }
 
 #bannerText{
-    padding: 2.5%;
+    padding: 2%;
     letter-spacing:0.2em;
     font-family: sans-serif;
     margin-bottom: 0%;
+    font-size: 25px;
 }
