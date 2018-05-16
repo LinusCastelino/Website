@@ -1,15 +1,36 @@
 #skillsContent{
     background-image: url("../../assets/images/skills-bg.webp");
-    object-fit: cover;
-    opacity: 0.5;
+    background-size: auto;
+    
+    object-fit: fill;
+    opacity: 0.8;
     z-index: -10;
 }
 
 .bgImgTintContainer{
-    background-color: rgba(24, 33, 83, 0.75);
+    background-color: rgba(24, 33, 83, 0.8);
 }
 
 p{
     opacity: 1;
     margin-bottom: 0%;
+}
+
+#skills-grid{
+    margin-left: 18%;
+    margin-right: 18%;
+    display: grid;
+    grid-column-gap: 190px;
+    grid-row-gap: 50px;
+    grid-template-columns: auto auto;
+    padding-top : 5%;
+    padding-bottom: 5%    
+}
+
+#skills-grid-item{
+    background-color:rgba(157, 167, 219, 0.2);
+    color: white;
+    padding: 40px;
+    text-align: center;
+    font-weight: bold;
 }
