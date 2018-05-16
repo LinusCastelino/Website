@@ -6,6 +6,7 @@
     position: fixed;
     width: -webkit-fill-available;
     opacity: 0.8;
+    padding-top: 8px;
 }
 
 ul{
@@ -14,15 +15,25 @@ ul{
 
 li{
     margin-right: 20px;
-    margin-top: 8px;
+    margin-top: 6px;
     padding-left: 4px;
     padding-right: 4px;
     border-top: 0.6px solid rgb(252, 19, 89);
+    color:#182153;
+    font-weight: 500;
 }
 
 a{
-    color:#182153;
+    text-decoration: none;    /*to remove the default underline behavior of anchor tag on hover*/
 }
+
+li:hover{
+    border-top: 2px solid rgb(252, 19, 89);
+    margin-top: 4px;
+    padding-top: 1px;
+    color:#7a7c86;
+}
+
 
 .navbar-nav{
     flex-direction: row;
@@ -30,4 +41,15 @@ a{
 
 .navbar{
     padding: 0%;
+}
+
+.navbar-header>a{
+    color:#182153;
+}
+
+.active-selection{
+    border-top: 2px solid rgb(252, 19, 89);
+    margin-top: 4px;
+    padding-top: 1px;
+    color:#3456ff;
 }

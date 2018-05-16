@@ -7,12 +7,19 @@
           </a>
         </div>
         <ul class="nav navbar-nav">
-          <li><a href="#">Professional Experience</a></li>
-          <li><a href="#">Education</a></li>
-          <li><a href="#">Skills</a></li>
-          <li><a href="#">Testimonials</a></li>
-          <li><a href="#">Contact</a></li>
+          <a href="#profExpContainer"><li>Professional Experience</li></a>
+          <a href="#educationContainer"><li>Education</li></a>
+          <a href="#skillsContainer"><li>Skills</li></a>
+          <a href="#testimonialsContainer"><li>Testimonials</li></a>
+          <a href="#contactMeContainer"><li>Contact</li></a>
         </ul>
       </div>
     </nav>
 </div>
+
+<!-- <script>
+  $("a").on("click", function(){
+    $("a").parent().find(".active-selection").removeClass("active-selection");
+    $(this).addClass("active-selection");
+  });
+</script> -->

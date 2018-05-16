@@ -1,0 +1,15 @@
+#skillsContent{
+    background-image: url("../../assets/images/skills-bg.webp");
+    object-fit: cover;
+    opacity: 0.5;
+    z-index: -10;
+}
+
+.bgImgTintContainer{
+    background-color: rgba(24, 33, 83, 0.75);
+}
+
+p{
+    opacity: 1;
+    margin-bottom: 0%;
+}

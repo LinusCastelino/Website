@@ -1,1 +1,15 @@
 /* You can add global styles to this file, and also import other style files */
+
+.sectionBanner{
+    text-align: center;
+    background-color: #050a5a;
+    width: 100%;
+    color: white;
+}
+
+#bannerText{
+    padding: 2.5%;
+    letter-spacing:0.2em;
+    font-family: sans-serif;
+    margin-bottom: 0%;
+}
