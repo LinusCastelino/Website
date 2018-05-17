@@ -1,0 +1,44 @@
+#contactMeContainer{
+    height: max-content;
+}
+
+#contactMeGrid{
+    display: grid;
+    grid-template-columns: auto 2px auto;
+    margin-top: 2%;
+    margin-right: 10%;
+    margin-left: 10%;
+    margin-bottom: 5%;
+}
+
+#contactMe-grid-item{
+    padding : 8%;
+}
+
+input{
+    margin-bottom: 1%;
+}
+
+hr{
+    border-left: 1.2px solid white;
+    height: 110%;
+}
+
+textarea{
+    margin-bottom: 1%;
+    height: 200px;
+    word-wrap: break-word;
+    overflow-x: hidden;
+    resize: none;
+}
+
+button{
+    width: 100%;
+    background-color: #050a5a;
+    color: white;
+    border-radius : 0.6rem;
+}
+
+.form-control{
+    border-radius : 0.6rem;
+}

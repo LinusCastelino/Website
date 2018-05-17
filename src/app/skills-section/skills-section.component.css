@@ -1,7 +1,6 @@
 #skillsContent{
     background-image: url("../../assets/images/skills-bg.webp");
-    background-size: auto;
-    
+    background-size: cover;
     object-fit: fill;
     opacity: 0.8;
     z-index: -10;
