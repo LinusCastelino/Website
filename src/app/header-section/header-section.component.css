@@ -4,7 +4,7 @@
     line-height: 30px;
     background-color: white;
     position: fixed;
-    width: -webkit-fill-available;
+    width: stretch;
     opacity: 0.8;
     padding-top: 18px;
     top:0;

@@ -4,11 +4,11 @@
 
 #contactMeGrid{
     display: grid;
-    grid-template-columns: auto 2px auto;
-    margin-top: 2%;
+    grid-template-columns: 50% 2px 50%;
+    margin-top: 1%;
     margin-right: 10%;
     margin-left: 10%;
-    margin-bottom: 5%;
+    margin-bottom: 1.5%;
 }
 
 #contactMe-grid-item{
@@ -19,9 +19,18 @@ input{
     margin-bottom: 1%;
 }
 
-hr{
+#verticalDivider{
     border-left: 1.2px solid white;
-    height: 110%;
+    height: 95%;
+}
+
+#horizontalDivider{
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    border-left: 1.2px solid black;
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
 
 textarea{
@@ -41,4 +50,13 @@ button{
 
 .form-control{
     border-radius : 0.6rem;
+}
+
+table{
+    margin-left : 10%;
+    color: #050a5a;
+}
+
+td div{
+    margin-bottom : 15%;
 }
