@@ -6,13 +6,13 @@
     <div id="contactMeContent">
       <div id="contactMeGrid">
         <div id="contactMe-grid-item">
-          <form id="contactMeForm">
-            <input type="text" placeholder="Name" class="form-control"  required /> 
-            <input type="email" placeholder="Email" class="form-control"  required />
-            <input type="tel" placeholder="Phone" class="form-control" />
-            <input type="text" placeholder="Subject" class="form-control"  required />
-            <textarea placeholder="Message" class="form-control"  required></textarea>
-            <button class="btn btn-default">Submit</button>
+          <form id="contactMeForm" #contactMeForm="ngForm" >
+            <input type="text" name="name" placeholder="Name" minlength="4" class="form-control" ngModel required /> 
+            <input type="email" name="email" placeholder="Email" class="form-control" ngModel required />
+            <input type="tel" name="phone" placeholder="Phone" class="form-control" ngModel />
+            <input type="text" name="subject" placeholder="Subject" class="form-control" ngModel required />
+            <textarea name="message" placeholder="Message" class="form-control"  ngModel required></textarea>
+            <button class="btn btn-default" (click)="sendMessage(contactMeForm)" >Submit</button>
           </form>
         </div>
 
