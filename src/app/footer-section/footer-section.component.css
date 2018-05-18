@@ -1,5 +1,6 @@
 #footerContainer{
     background-color: white;
+    padding-top: 1.2%;
     margin: 0%;
     max-width: 100%;
     text-align: center;
@@ -10,5 +11,5 @@
 }
 
 img{
-    width: 2%
+    width: 2%;
 }

@@ -60,3 +60,13 @@ table{
 td div{
     margin-bottom : 15%;
 }
+
+#socialContainer{
+    margin-left : 12%;
+    margin-top: 6%;
+}
+
+#socials-github-img{
+    width:21.99px;
+     height:21.99px;
+}
