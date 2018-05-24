@@ -12,6 +12,8 @@ import { Message } from '../model/Message';
 export class ContactMeSectionComponent implements OnInit {
 
   private message : Message;
+  showSuccessMsg : boolean = false;
+  showFailureMsg: boolean = false;
 
   constructor(private mailerService : MailerService) { 
   }
@@ -32,6 +34,17 @@ export class ContactMeSectionComponent implements OnInit {
     }
 
     //console.log(this.message);
-    this.mailerService.sendMessage(this.message);
+    this.mailerService.sendMessage(this.message).subscribe(res => {
+      if(res.status == 200){
+        console.log(`Email sent successfully - ${res.text()}`);
+        this.showSuccessMsg= true;
+        this.showFailureMsg = false;
+      }
+      else if(res.status == 500){
+        console.log(`Error encountered while sending email - ${res.text()}`);
+        this.showFailureMsg= true;
+        this.showSuccessMsg= false;
+      }
+    });
   }
 }

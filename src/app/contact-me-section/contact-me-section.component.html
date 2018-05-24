@@ -14,6 +14,18 @@
             <textarea name="message" placeholder="Message" class="form-control"  ngModel required></textarea>
             <button class="btn btn-default" (click)="sendMessage(contactMeForm)" >Submit</button>
           </form>
+
+          <br />
+
+          <p id="successMsg" *ngIf="showSuccessMsg">
+            Thank you for your message. Sent to Linus successfully.
+          </p>
+
+          <p id="failureMsg" *ngIf="showFailureMsg">
+            Oops.. There was an error while sending your message.
+            <br />
+            Please try again or use the contact details mentioned alongside.
+          </p>
         </div>
 
         <hr id="verticalDivider"/>
