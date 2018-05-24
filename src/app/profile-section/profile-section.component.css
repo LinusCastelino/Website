@@ -4,6 +4,10 @@
     margin-top: 80px;
 }
 
+.bgImgTintContainer{
+    background-color: rgba(24, 33, 83, 0.5);
+}
+
 #profileGrid{
     padding-top: 6%;
     margin-left:15%;

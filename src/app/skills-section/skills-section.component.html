@@ -3,32 +3,13 @@
       <p id="bannerText">Skills</p>
     </div>
   
-    <div id="skillsContent">
+    <div id="skillsContent" class="bgImgTintContainer">
       <div class="bgImgTintContainer">
         <div id="skills-grid">
-          <div id="skills-grid-item">
-            Java Programming - Expert
-          </div>
-          <div id="skills-grid-item">
-            Oracle Web Commerce - Expert
-          </div>
-          <div id="skills-grid-item">
-            Shell Scripting - Proficient
-          </div>
-          <div id="skills-grid-item">
-            SQL - Expert
-          </div>
-          <div id="skills-grid-item">
-            JBoss - Proficient
-          </div>
-          <div id="skills-grid-item">
-            JavaScript, jQuery - Intermediate
-          </div>
-          <div id="skills-grid-item">
-            REST/SOAP - Intermediate
-          </div>
-          <div id="skills-grid-item">
-            ANT - Intermediate
+          <div id="skills-grid-item" *ngFor="let skill of skills ">
+            {{ skill.skillTitle }}
+            <br />
+            {{ skill.level }}
           </div>
         </div>
       </div>
