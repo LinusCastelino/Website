@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Testifier } from '../model/Testifier'; 
+import { ITestifier } from '../model/ITestifier'; 
 
 @Component({
   selector: 'app-testimonials-section',
@@ -8,7 +8,7 @@ import { Testifier } from '../model/Testifier';
 })
 export class TestimonialsSectionComponent implements OnInit {
 
-  private testifiers: Testifier[];
+  private testifiers: ITestifier[];
 
   constructor() { 
     this.testifiers = [];

@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Skill } from '../model/Skill';
+import { ISkill } from '../model/ISkill';
 
 @Component({
   selector: 'app-skills-section',
@@ -9,7 +9,7 @@ import { Skill } from '../model/Skill';
 
 export class SkillsSectionComponent implements OnInit {
 
-  private skills: Skill[];
+  private skills: ISkill[];
 
   constructor() { 
     this.skills = [];

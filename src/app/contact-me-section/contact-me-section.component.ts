@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { MailerService } from '../services/mailer.service';
 import { NgForm } from '@angular/forms';
-import { Message } from '../model/Message';
+import { IMessage } from '../model/IMessage';
 
 @Component({
   selector: 'app-contact-me-section',
@@ -11,7 +11,7 @@ import { Message } from '../model/Message';
 })
 export class ContactMeSectionComponent implements OnInit {
 
-  private message : Message;
+  private message : IMessage;
   showSuccessMsg : boolean = false;
   showFailureMsg: boolean = false;
 

@@ -7,11 +7,7 @@
           </a>
         </div>
         <ul class="nav navbar-nav">
-          <a href="#profExpContainer"><li>Professional Experience</li></a>
-          <a href="#educationContainer"><li>Education</li></a>
-          <a href="#skillsContainer"><li>Skills</li></a>
-          <a href="#testimonialsContainer"><li>Testimonials</li></a>
-          <a href="#contactMeContainer"><li>Contact</li></a>
+          <a href="#{{ headerNav.hrefUrl }}" *ngFor="let headerNav of headerNavs"><li>{{ headerNav.title }}</li></a>
         </ul>
       </div>
     </nav>
