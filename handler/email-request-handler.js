@@ -23,19 +23,18 @@ function emailHandler(req, res) {
         from : req.body.email,
         to: recipient,
         subject: 'Website Message : ' + req.body.subject,
-        html: `
-                <html>
+        html: ` <html>
                     <body>
-                        <b>Name : </b> `+ req.body.name +
-                        `<br />
-                        <b>Email : </b> `+ req.body.email +
-                        `<br />
-                        <b>Phone : </b> `+ req.body.phone +
-                        `<br />
-                        <b>Subject : </b> ` + req.body.subject +
-                        `<br />
-                        <b>Message : </b> ` + req.body.text +
-                    `</body>
+                        <b>Name : </b> ${req.body.name}
+                        <br />
+                        <b>Email : </b> ${req.body.email}
+                        <br />
+                        <b>Phone : </b> ${req.body.phone}
+                        <br />
+                        <b>Subject : </b> ${req.body.subject}
+                        <br />
+                        <b>Message : </b> ${req.body.text}
+                    </body>
                 </html>`
     }
 

@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Message } from '../model/Message';
+import { IMessage } from '../model/IMessage';
 import { Http } from '@angular/http';
 import { Observable } from 'rxjs';
 
@@ -10,7 +10,7 @@ export class MailerService {
 
   constructor(private _http: Http) { }
 
-  public sendMessage(message: Message) : Observable<any>{
+  public sendMessage(message: IMessage) : Observable<any>{
     console.log('Inside : MailerService.sendMessage()');
     // console.log(message.name);
     // console.log(message.email);

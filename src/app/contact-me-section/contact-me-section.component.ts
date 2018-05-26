@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { MailerService } from '../services/mailer.service';
 import { NgForm } from '@angular/forms';
 import { IMessage } from '../model/IMessage';
+import { PersonalInfo } from '../model/PersonalInfo'
+import { ISocialsInfo, SocialsInfo } from '../model/SocialsInfo'
 
 @Component({
   selector: 'app-contact-me-section',
@@ -11,11 +13,16 @@ import { IMessage } from '../model/IMessage';
 })
 export class ContactMeSectionComponent implements OnInit {
 
+  logoImgColor: string = 'black';
   private message : IMessage;
+  private personalInfo = PersonalInfo.info;
+  private socialsInfo: ISocialsInfo[];
   showSuccessMsg : boolean = false;
   showFailureMsg: boolean = false;
 
   constructor(private mailerService : MailerService) { 
+    var socials = new SocialsInfo(this.logoImgColor);
+    this.socialsInfo = socials.info;
   }
 
   ngOnInit() {

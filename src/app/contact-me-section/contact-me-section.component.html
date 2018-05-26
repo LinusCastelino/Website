@@ -8,10 +8,10 @@
         <div id="contactMe-grid-item">
           <form id="contactMeForm" #contactMeForm="ngForm" >
             <input type="text" name="name" placeholder="Name" minlength="4" class="form-control" ngModel required /> 
-            <input type="email" name="email" placeholder="Email" class="form-control" ngModel required />
+            <input type="email" name="email" placeholder="Email" minlength="4" class="form-control" ngModel required />
             <input type="tel" name="phone" placeholder="Phone" class="form-control" ngModel />
-            <input type="text" name="subject" placeholder="Subject" class="form-control" ngModel required />
-            <textarea name="message" placeholder="Message" class="form-control"  ngModel required></textarea>
+            <input type="text" name="subject" placeholder="Subject" minlength="4" class="form-control" ngModel required />
+            <textarea name="message" placeholder="Message" minlength="4" class="form-control"  ngModel required></textarea>
             <button class="btn btn-default" (click)="sendMessage(contactMeForm)" >Submit</button>
           </form>
 
@@ -33,29 +33,11 @@
         <div id="contactMe-grid-item">
           <div id="infoPanel">
             <table>
-              <tr>
+              <tr *ngFor="let info of personalInfo">
                 <td>
                   <div>
-                    <h3><b>Linus Castelino</b></h3>
-                    <span>Developer, B.E. (Computer Engineering)</span>
-                  </div>
-                </td>
-              </tr>
-
-              <tr>
-                <td>
-                  <div>
-                    <h6><b>Phone:</b></h6>
-                    <span>+91-9594544603</span>
-                  </div>
-                </td>
-              </tr>
-
-              <tr>
-                <td>
-                  <div>
-                    <h6><b>Email:</b></h6>
-                    <span>castelinolinus@gmail.com</span>
+                    <h3><b>{{ info.title }}</b></h3>
+                    <span>{{ info.detail }}</span>
                   </div>
                 </td>
               </tr>
@@ -66,31 +48,10 @@
           
           <div id="socialContainer" class="container">
             <div class="row">
-              <div id="socials-linkedin" class="col-sm-2">
-                <a href="https://www.linkedin.com/in/linuscastelino/" target="_blank">
-                  <img src="../../assets/images/LinkedIn-logo-black.png" />
+              <div id="socials-{{ info.type }}" class="col-sm-2" *ngFor="let info of socialsInfo">
+                <a href="{{ info.hrefUrl }}" target="_blank">
+                  <img src="{{ info.logoImgUrl }}" />
                 </a>
-              </div>
-              <div id="socials-facebook" class="col-sm-2">
-                <a href="https://www.facebook.com/linuscastelino" target="_blank">
-                  <img src="../../assets/images/Facebook-logo-black.png" />
-                </a>
-              </div>
-              <div id="socials-twitter" class="col-sm-2">
-                <a href="https://twitter.com/LinusCastelino" target="_blank">
-                  <img src="../../assets/images/Twitter-logo-black.png" />
-                </a>
-              </div>
-              <div id="socials-instagram" class="col-sm-2">
-                <a href="https://www.instagram.com/linuscastelino/" target="_blank">
-                  <img src="../../assets/images/Instagram-logo-black.png" />
-                </a>
-              </div>
-              <div id="socials-github" class="col-sm-2">
-                <a href="https://github.com/LinusCastelino" target="_blank">
-                  <img id="socials-github-img" src="../../assets/images/Github-logo-black.svg" />
-                </a>
-              </div>
             </div>
           </div>
 

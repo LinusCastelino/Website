@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { PersonalInfo } from '../model/PersonalInfo'
 
 @Component({
   selector: 'app-profile-section',
@@ -6,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./profile-section.component.css']
 })
 export class ProfileSectionComponent implements OnInit {
+
+  private personalInfo = PersonalInfo.info;
 
   constructor() { }
 

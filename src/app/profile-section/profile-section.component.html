@@ -7,35 +7,14 @@
 
             <div id="profileInfoPanel">
                 <table>
-                    <tr>
+                    <tr *ngFor="let info of personalInfo">
                         <td>
                             <div>
-                                <b>Linus Castelino</b>
-                                <br />
-                                Developer, B.E. (Computer Engineering)
+                                <h3><b>{{ info.title }}</b></h3>
+                                <span>{{ info.detail }}</span>
                             </div>
                         </td>
                     </tr>
-
-                    <tr>
-                        <td>
-                            <div>
-                                <b>Phone:</b>
-                                <br />
-                                +91-9594544603
-                            </div>
-                        </td>
-                    </tr>
-
-                    <tr>
-                        <td>
-                            <div>
-                                <b>Email:</b>
-                                <br />
-                                castelinolinus@gmail.com
-                            </div>
-                        </td>
-                    </tr> 
 
                     <tr>
                         <td>
