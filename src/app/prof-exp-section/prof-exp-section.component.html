@@ -4,7 +4,7 @@
   </div>
 
   <div id="profExpContent">
-    <div id="timeline">
+    <div id="profExpTimeline">
       <ul>
         <li id="profExpEvent" *ngFor="let profExpEvent of profExpEvents">
           <div id="eventHeader">
@@ -12,7 +12,7 @@
             <p>{{ profExpEvent.eventHeader.designation }}</p>
           </div>
 
-          <div>
+          <div id="eventInfo">
             <h4 innerHTML="{{ profExpEvent.event.title }}"></h4>    <!-- Using innerHTML attribute since the strings contain html tags -->
             <ul>
               <li *ngFor="let desc of profExpEvent.event.desc" innerHTML="{{ desc }}">

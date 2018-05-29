@@ -1,12 +1,12 @@
 export interface IProfExp{
     eventHeader : {
-        time : string,
-        designation: string
+        time : string;
+        designation: string;
     };
 
     event :  {
-        title: string,
-        desc : string[]
+        title: string;
+        desc : string[];
     };
 
     eventLogoUrl : string;
