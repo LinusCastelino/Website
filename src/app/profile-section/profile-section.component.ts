@@ -8,7 +8,7 @@ import { PersonalInfo } from '../model/PersonalInfo'
 })
 export class ProfileSectionComponent implements OnInit {
 
-  private personalInfo = PersonalInfo.info;
+  personalInfo = PersonalInfo.info;
 
   constructor() { }
 

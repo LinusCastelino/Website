@@ -9,7 +9,7 @@ import { ISkill } from '../model/ISkill';
 
 export class SkillsSectionComponent implements OnInit {
 
-  private skills: ISkill[];
+  skills: ISkill[];
 
   constructor() { 
     this.skills = [];

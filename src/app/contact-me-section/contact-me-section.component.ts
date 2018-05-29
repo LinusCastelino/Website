@@ -15,8 +15,8 @@ export class ContactMeSectionComponent implements OnInit {
 
   logoImgColor: string = 'black';
   private message : IMessage;
-  private personalInfo = PersonalInfo.info;
-  private socialsInfo: ISocialsInfo[];
+  personalInfo = PersonalInfo.info;
+  socialsInfo: ISocialsInfo[];
   showSuccessMsg : boolean = false;
   showFailureMsg: boolean = false;
 

@@ -8,7 +8,7 @@ import { ITestifier } from '../model/ITestifier';
 })
 export class TestimonialsSectionComponent implements OnInit {
 
-  private testifiers: ITestifier[];
+  testifiers: ITestifier[];
 
   constructor() { 
     this.testifiers = [];
