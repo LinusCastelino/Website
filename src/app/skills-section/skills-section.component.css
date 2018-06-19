@@ -18,10 +18,10 @@ p{
 #skills-grid{
     margin-left: 18%;
     margin-right: 18%;
-    display: grid;
+    /* display: grid;
     grid-column-gap: 190px;
     grid-row-gap: 50px;
-    grid-template-columns: auto auto;
+    grid-template-columns: auto auto; */
     padding-top : 5%;
     padding-bottom: 5%    
 }
@@ -32,4 +32,5 @@ p{
     padding: 40px;
     text-align: center;
     font-weight: bold;
+    margin: 6%
 }

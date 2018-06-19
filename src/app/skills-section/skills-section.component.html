@@ -4,12 +4,14 @@
     </div>
   
     <div id="skillsContent" class="bgImgTintContainer">
-      <div class="bgImgTintContainer">
-        <div id="skills-grid">
-          <div id="skills-grid-item" *ngFor="let skill of skills ">
-            {{ skill.skillTitle }}
-            <br />
-            {{ skill.level }}
+      <div class="bgImgTintContainer container-fluid">
+        <div id="skills-grid" class="row">
+          <div class="col-lg-6" *ngFor="let skill of skills">
+            <div id="skills-grid-item" >
+              {{ skill.skillTitle }}
+              <br />
+              {{ skill.level }}
+            </div>
           </div>
         </div>
       </div>

@@ -3,26 +3,28 @@
       <p id="bannerText">Testimonials</p>
     </div>
   
-    <div id="testimonialsContent">
-      <div id="grid-container">
-        <div id="grid-item" *ngFor="let testifier of testifiers">
-          <div id="testifier-details">
-            <table>
-              <tr>
-                <td rowspan="3"><img src="{{ testifier.imageUrl }}" /></td>
-                <td>{{ testifier.name }}</td>
-              </tr>
-              <tr>
-                <td>{{ testifier.role }}</td>
-              </tr>
-              <tr>
-                <td>{{ testifier.organization }}</td>
-              </tr>
-            </table>
+    <div id="testimonialsContent" class="container-fluid">
+      <div id="grid-container" class="row">
+        <div class="col-lg-4" *ngFor="let testifier of testifiers">
+          <div id="grid-item">
+            <div id="testifier-details">
+              <table>
+                <tr>
+                  <td rowspan="3"><img src="{{ testifier.imageUrl }}" /></td>
+                  <td>{{ testifier.name }}</td>
+                </tr>
+                <tr>
+                  <td>{{ testifier.role }}</td>
+                </tr>
+                <tr>
+                  <td>{{ testifier.organization }}</td>
+                </tr>
+              </table>
+            </div>
+            <p id="testimony">
+                "{{ testifier.testimony }}"
+            </p>
           </div>
-          <p id="testimony">
-              "{{ testifier.testimony }}"
-          </p>
         </div>
       </div>
 
