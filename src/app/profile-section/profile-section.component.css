@@ -10,14 +10,12 @@
 
 #profileGrid{
     padding-top: 6%;
-    margin-left:15%;
-    margin-right:15%;
-    display: grid;
-    grid-template-columns: max-content auto;
 }
 
 img{
     border: 1px solid black;
+    width: 100%;
+    object-fit: fill;
 }
 
 #profileInfoPanel{

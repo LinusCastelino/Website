@@ -1,23 +1,23 @@
 <div id="educationContainer">
-    <div id="sectionBanner" class="sectionBanner">
-      <p id="bannerText">Education</p>
-    </div>
+  <div id="sectionBanner" class="sectionBanner">
+    <p id="bannerText">Education</p>
+  </div>
   
-    <div id="educationContent">
-      <div id="eduTimeline">
-        <ul>
-          <li id="eduEvent" *ngFor="let eduEvent of educationEvents">
-            <div id="eventHeader">
-              <h5>{{ eduEvent.eventHeader.batch }}</h5>
-              <p *ngFor="let detail of eduEvent.eventHeader.details">{{ detail }}</p>
-            </div>
+  <div id="educationContent">
+    <div id="eduTimeline">
+      <ul>
+        <li id="eduEvent" *ngFor="let eduEvent of educationEvents">
+          <div id="eventHeader">
+            <h5>{{ eduEvent.eventHeader.batch }}</h5>
+            <p *ngFor="let detail of eduEvent.eventHeader.details">{{ detail }}</p>
+          </div>
 
-            <div id="eventInfo">
-              <h4>{{ eduEvent.eventInfo.univ }}</h4>
-              <p *ngFor="let detail of eduEvent.eventInfo.details">{{ detail }}</p>
-            </div>
-          </li>
-        </ul>
-      </div>
+          <div id="eventInfo">
+            <h4>{{ eduEvent.eventInfo.univ }}</h4>
+            <p *ngFor="let detail of eduEvent.eventInfo.details">{{ detail }}</p>
+          </div>
+        </li>
+      </ul>
     </div>
   </div>
+</div>
