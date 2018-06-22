@@ -16,21 +16,35 @@ p{
 }
 
 #skills-grid{
-    margin-left: 18%;
-    margin-right: 18%;
+    margin-left: 8%;
+    margin-right: 8%;
     /* display: grid;
     grid-column-gap: 190px;
     grid-row-gap: 50px;
     grid-template-columns: auto auto; */
-    padding-top : 5%;
-    padding-bottom: 5%    
+    padding-top : 2%;
+    padding-bottom: 2%    
 }
 
 #skills-grid-item{
     background-color:rgba(157, 167, 219, 0.2);
     color: white;
-    padding: 40px;
+    padding: 20px;
     text-align: center;
     font-weight: bold;
-    margin: 6%
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-right: 15%;
+    margin-left: 15%
+}
+
+@media only screen and (max-width: 768px){
+    #skills-grid-item{
+        margin-right: 0%;
+        margin-left: 0%
+    }
+
+    .col-lg-6{
+        padding: 0%
+    }
 }

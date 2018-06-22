@@ -3,14 +3,14 @@
       <p id="bannerText">Contact Me</p>
     </div>
   
-    <div id="contactMeContent">
-      <div id="contactMeGrid">
-        <div id="contactMe-grid-item">
+    <div id="contactMeContent" class="container-fluid">
+      <div id="contactMeGrid" class="row">
+        <div id="contactMe-grid-item" class="col-md-6">
           <form id="contactMeForm" #contactMeForm="ngForm" >
-            <input type="text" name="name" placeholder="Name" minlength="4" class="form-control" ngModel required /> 
-            <input type="email" name="email" placeholder="Email" minlength="4" class="form-control" ngModel required />
+            <input type="text" name="name" placeholder="Name*" minlength="4" class="form-control" ngModel required /> 
+            <input type="email" name="email" placeholder="Email*" minlength="4" class="form-control" ngModel required />
             <input type="tel" name="phone" placeholder="Phone" class="form-control" ngModel />
-            <input type="text" name="subject" placeholder="Subject" minlength="4" class="form-control" ngModel required />
+            <input type="text" name="subject" placeholder="Subject*" minlength="4" class="form-control" ngModel required />
             <textarea name="message" placeholder="Message" minlength="4" class="form-control"  ngModel required></textarea>
             <button class="btn btn-default" (click)="sendMessage(contactMeForm)" >Submit</button>
           </form>
@@ -28,9 +28,7 @@
           </p>
         </div>
 
-        <hr id="verticalDivider"/>
-
-        <div id="contactMe-grid-item">
+        <div id="contactMe-grid-item" class="col-md-6">
           <div id="infoPanel">
             <table>
               <tr *ngFor="let info of personalInfo">
@@ -48,7 +46,7 @@
           
           <div id="socialContainer" class="container">
             <div class="row">
-              <div id="socials-{{ info.type }}" class="col-sm-2" *ngFor="let info of socialsInfo">
+              <div id="socials-{{ info.type }}" class="col-xs-2" *ngFor="let info of socialsInfo">
                 <a href="{{ info.hrefUrl }}" target="_blank">
                   <img src="{{ info.logoImgUrl }}" />
                 </a>
@@ -59,3 +57,5 @@
       </div>
     </div>
   </div>
+
+  <hr id="verticalDivider"/>

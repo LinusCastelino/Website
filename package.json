@@ -7,7 +7,7 @@
     "start-dev": "concurrently --kill-others-on-fail \"npm run build-dev\" \"nodemon server.js\"",
     "start-prod": "npm run build-prod && node server.js",
     "build-dev": "ng build --watch",
-    "build-prod":"ng build --prod",
+    "build-prod": "ng build --prod",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
@@ -27,6 +27,7 @@
     "bootstrap": "^4.1.1",
     "core-js": "^2.5.4",
     "express": "^4.16.3",
+    "jquery": "^3.3.1",
     "nodemailer": "^4.6.4",
     "rxjs": "^6.0.0",
     "zone.js": "^0.8.26"
@@ -38,6 +39,7 @@
     "@angular/language-service": "^6.0.0",
     "@types/jasmine": "~2.8.6",
     "@types/jasminewd2": "~2.0.3",
+    "@types/jquery": "^3.3.1",
     "@types/node": "~8.9.4",
     "codelyzer": "~4.2.1",
     "concurrently": "^3.5.1",

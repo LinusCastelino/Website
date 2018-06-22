@@ -1,18 +1,20 @@
 #contactMeContainer{
     height: max-content;
+    position: relative;
 }
 
 #contactMeGrid{
-    display: grid;
-    grid-template-columns: 50% 2px 50%;
-    margin-top: 1%;
-    margin-right: 10%;
-    margin-left: 10%;
-    margin-bottom: 1.5%;
+    /* display: grid;
+    grid-template-columns: 50% 2px 50%; */
+    margin-top: 4%;
+    /* margin-right: 10%;
+    margin-left: 10%; */
+    margin-bottom: 4%;
 }
 
 #contactMe-grid-item{
-    padding : 8%;
+    padding-right : 8%;
+    padding-left : 8%;
 }
 
 input{
@@ -21,13 +23,15 @@ input{
 
 #verticalDivider{
     border-left: 1.2px solid white;
-    height: 95%;
+    height: 70%;
+    position: absolute;
+    top: 20%;
+    left: 50%;
 }
 
 #horizontalDivider{
-    width: 80%;
-    margin-left: 10%;
-    margin-right: 10%;
+    width: 95%;
+    margin-left: 5%;
     border-left: 1.2px solid black;
     margin-top: 0px;
     margin-bottom: 0px;
@@ -35,7 +39,7 @@ input{
 
 textarea{
     margin-bottom: 1%;
-    height: 200px;
+    height: 150px;
     word-wrap: break-word;
     overflow-x: hidden;
     resize: none;
@@ -53,20 +57,35 @@ button{
 }
 
 table{
-    margin-left : 10%;
     color: #050a5a;
+    text-align: center;
+    width: stretch;    /* -webkit-fill-available */
 }
 
-td div{
-    margin-bottom : 15%;
+td>div{
+    margin-bottom : 8%;
 }
 
 #socialContainer{
-    margin-left : 12%;
-    margin-top: 6%;
+    margin-left : 10%;
+    margin-top: 5%;
 }
 
 #socials-github img{
     width:21.99px;
      height:21.99px;
+}
+
+.col-xs-2{
+    padding-right: 15%;
+}
+
+@media only screen and (max-width: 768px){
+    #verticalDivider{
+        display: none;
+    }
+
+    .col-xs-2{
+        padding-right: 11%
+    }
 }

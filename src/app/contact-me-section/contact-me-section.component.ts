@@ -47,11 +47,16 @@ export class ContactMeSectionComponent implements OnInit {
         this.showSuccessMsg= true;
         this.showFailureMsg = false;
       }
-      else if(res.status == 500){
+      else if(res.status == 500 || res.status == 404){
         console.log(`Error encountered while sending email - ${res.text()}`);
         this.showFailureMsg= true;
         this.showSuccessMsg= false;
       }
-    });
+      err =>{
+        console.log(`Mailer Service failed`);
+        this.showFailureMsg= true;
+        this.showSuccessMsg= false;
+      }},
+  );
   }
 }

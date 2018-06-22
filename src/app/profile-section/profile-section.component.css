@@ -25,7 +25,27 @@ img{
 }
 
 table{
-    margin : 10%;
+    margin : 8%;
     color: #050a5a;
     text-align: center;
+}
+
+td>div{
+    margin-bottom : 8%;
+}
+
+.col-md-6{
+    padding: 0%;
+}
+
+@media only screen and (max-width:768px){
+    .col-md-6{
+        margin-left: 3.5%;
+        margin-right: 3.5%;
+    }
+
+    #profileInfoPanel{
+        border-left: 1px solid black;
+    }
+
 }

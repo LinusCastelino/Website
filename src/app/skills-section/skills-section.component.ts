@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ISkill } from '../model/ISkill';
+import * as $ from 'jquery';
 
 @Component({
   selector: 'app-skills-section',
@@ -24,7 +25,6 @@ export class SkillsSectionComponent implements OnInit {
   }
 
   ngOnInit() {
-    
   }
 
 }
