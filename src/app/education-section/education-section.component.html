@@ -9,15 +9,17 @@
         <li id="eduEvent" *ngFor="let eduEvent of educationEvents">
           <div id="eventHeader">
             <h5>{{ eduEvent.eventHeader.batch }}</h5>
-            <p *ngFor="let detail of eduEvent.eventHeader.details">{{ detail }}</p>
+            <p *ngFor="let detail of eduEvent.eventHeader.details" innerHTML="{{ detail }}"></p>
           </div>
 
           <div id="eventInfo">
-            <h4>{{ eduEvent.eventInfo.univ }}</h4>
-            <p *ngFor="let detail of eduEvent.eventInfo.details">{{ detail }}</p>
+            <h4 innerHTML="{{ eduEvent.eventInfo.univ }}"></h4>
+            <p *ngFor="let detail of eduEvent.eventInfo.details" innerHTML="{{ detail }}"></p>
           </div>
         </li>
       </ul>
     </div>
   </div>
+
+  <h1>Click <button (click)="openMatDialog()" >HERE</button></h1>
 </div>

@@ -2,8 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { MailerService } from '../services/mailer.service';
 import { NgForm } from '@angular/forms';
 import { IMessage } from '../model/IMessage';
-import { PersonalInfo } from '../model/PersonalInfo'
-import { ISocialsInfo, SocialsInfo } from '../model/SocialsInfo'
+import { PersonalInfo } from '../model/PersonalInfo';
+import { ISocialsInfo, SocialsInfo } from '../model/SocialsInfo';
 
 @Component({
   selector: 'app-contact-me-section',

@@ -1,0 +1,19 @@
+<div id="popupcontainer" class="container">
+  <div id="dialog-header" class="row col-sm-12">
+    <h2 mat-dialog-title>Title</h2>
+  </div>
+
+  <div id="dialog-body" class="row col-sm-12">
+    <mat-dialog-content>
+      {{ data.hello }}
+    </mat-dialog-content>
+  </div>
+  
+  <div id="dialog-footer" class="row col-sm-12">
+    <mat-dialog-actions>
+      <button class="mat-raised-button" (click)="closeDialog()">Close</button>
+    </mat-dialog-actions>
+  </div>
+  
+</div>
+

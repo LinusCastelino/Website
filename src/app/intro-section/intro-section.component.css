@@ -20,8 +20,11 @@ p{
 }
 
 #introSectionBannerWrapper{
-    /* margin-right: 15%;
-    margin-left: 15%; */
+    background-color: #050a5a;
+    padding-left: 11%;
+    padding-right: 11%;
+    padding-top: 1%;
+    padding-bottom: 1%;
 }
 
 .container{

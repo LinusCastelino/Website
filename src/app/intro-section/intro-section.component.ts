@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { SocialsInfo, ISocialsInfo } from '../model/SocialsInfo';
 
 @Component({
   selector: 'app-intro-section',
@@ -7,7 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class IntroSectionComponent implements OnInit {
 
-  constructor() { }
+  logoImgColor: string = 'white';
+  socialsInfo: ISocialsInfo[];
+
+  constructor() {
+    var socials = new SocialsInfo(this.logoImgColor);
+    this.socialsInfo = socials.info;
+   }
 
   ngOnInit() {
   }

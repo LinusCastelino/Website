@@ -27,6 +27,7 @@ input{
     position: absolute;
     top: 20%;
     left: 50%;
+    width: 2px;
 }
 
 #horizontalDivider{
@@ -38,7 +39,6 @@ input{
 }
 
 textarea{
-    margin-bottom: 1%;
     height: 150px;
     word-wrap: break-word;
     overflow-x: hidden;
@@ -80,6 +80,17 @@ td>div{
     padding-right: 15%;
 }
 
+#contactMeForm>section{
+    padding-right: 1.5%;
+    padding-left: 1.5%;
+    height: 10px;
+}
+
+mat-progress-bar{
+    padding-top: 0.6%;
+    height: 7px;
+}
+
 @media only screen and (max-width: 768px){
     #verticalDivider{
         display: none;
@@ -87,5 +98,13 @@ td>div{
 
     .col-xs-2{
         padding-right: 11%
+    }
+
+    mat-progress-bar{
+        height: 5px;
+    }
+
+    #contactMeForm>section{
+        height: 7px;
     }
 }

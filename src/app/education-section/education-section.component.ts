@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { IEducation } from '../model/IEducation';
+import { MatDialog, MatDialogConfig } from '@angular/material'
+import { PopupDialogComponent } from '../popup-dialog/popup-dialog.component';
 
 @Component({
   selector: 'app-education-section',
@@ -10,7 +12,7 @@ export class EducationSectionComponent implements OnInit {
 
   educationEvents : IEducation[] = [];
 
-  constructor() {
+  constructor(private matDialog: MatDialog) {
     this.educationEvents.push({
       eventHeader:{
         batch:'Fall 2018',
@@ -27,7 +29,7 @@ export class EducationSectionComponent implements OnInit {
       eventHeader:{
         batch:'Class of 2015',
         details: [
-          '<a href="#">St. Francis Institute of Technology</a>',
+          '<a href="http://sfitengg.org/" target="_blank">St. Francis Institute of Technology</a>',
           'Undergraduate School',
           'Bachelor\'s of Engineering'
         ]
@@ -36,7 +38,7 @@ export class EducationSectionComponent implements OnInit {
         univ: 'University of Mumbai',
         details: [
           'Major - Computer Engineering',
-          'Click <a href="#" target="_blank">here</a> to view Degree Certificate.',
+          'Click <a href="https://drive.google.com/file/d/0B40x1VYdbWc8VlBqMVhRMFRoeTQ/view?usp=sharing" target="_blank">here</a> to view Degree Certificate.',
           'Click <a href="#">here</a> to view projects undertaken in undergrad school.',
           'Click <a href="#">here</a> to view extra-curricular activities participated in.'
         ]
@@ -78,4 +80,17 @@ export class EducationSectionComponent implements OnInit {
   ngOnInit() {
   }
 
+  public openMatDialog(){
+    const matDialogConfig = new MatDialogConfig();
+    matDialogConfig.width = 'fit-content';
+    matDialogConfig.maxWidth = '80%';
+    matDialogConfig.maxHeight= '80%';
+    matDialogConfig.disableClose = false;
+    matDialogConfig.data = {hello:'Hellosdfsadfadsfsdafdsafsadfsdafsadfdsafsadfsdfasd'};
+    // matDialogConfig.hasBackdrop = false;    //Adds the shadow tint on the background of the dialog box
+
+    const matDialogRef = this.matDialog.open(PopupDialogComponent , matDialogConfig);
+  }
+
+  
 }
