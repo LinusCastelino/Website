@@ -6,7 +6,8 @@ import { PopupService } from '../services/popup.service';
 @Component({
   selector: 'app-prof-exp-section',
   templateUrl: './prof-exp-section.component.html',
-  styleUrls: ['./prof-exp-section.component.css']
+  styleUrls: ['./prof-exp-section.component.css'],
+  providers: [ PopupService ]
 })
 export class ProfExpSectionComponent implements OnInit {
 

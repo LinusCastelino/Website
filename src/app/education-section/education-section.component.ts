@@ -6,7 +6,8 @@ import { PopupService } from '../services/popup.service';
 @Component({
   selector: 'app-education-section',
   templateUrl: './education-section.component.html',
-  styleUrls: ['./education-section.component.css']
+  styleUrls: ['./education-section.component.css'],
+  providers: [ PopupService ]
 })
 export class EducationSectionComponent implements OnInit {
 
