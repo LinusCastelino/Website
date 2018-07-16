@@ -1,4 +1,4 @@
-export interface IHeaderNav{
+export interface IHeaderNav {
     title: string;
     hrefUrl: string;
 }

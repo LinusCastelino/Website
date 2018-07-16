@@ -1,10 +1,10 @@
-export interface IEducation{
-    eventHeader:{
-        batch : string;
-        details:string[];
+export interface IEducation {
+    eventHeader: {
+        batch: string;
+        details: string[];
     };
 
-    eventInfo:{
+    eventInfo: {
         univ: string;
         details: string[];
     };

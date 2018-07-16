@@ -1,4 +1,4 @@
-export interface ISkill{
-    skillTitle : string;
-    level : string;
+export interface ISkill {
+    skillTitle: string;
+    level: string;
 }

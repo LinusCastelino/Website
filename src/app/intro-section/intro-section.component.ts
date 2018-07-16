@@ -8,11 +8,11 @@ import { SocialsInfo, ISocialsInfo } from '../model/SocialsInfo';
 })
 export class IntroSectionComponent implements OnInit {
 
-  logoImgColor: string = 'white';
+  logoImgColor = 'white';
   socialsInfo: ISocialsInfo[];
 
   constructor() {
-    var socials = new SocialsInfo(this.logoImgColor);
+    const socials = new SocialsInfo(this.logoImgColor);
     this.socialsInfo = socials.info;
    }
 
