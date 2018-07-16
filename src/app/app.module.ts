@@ -40,7 +40,7 @@ import { PopupDialogComponent } from './popup-dialog/popup-dialog.component';
     MatProgressBarModule,
     MatDialogModule
   ],
-  providers: [],
+  providers: [],    //providers included at individual components
   bootstrap: [AppComponent],
   entryComponents: [PopupDialogComponent]
 })

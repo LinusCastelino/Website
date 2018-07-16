@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { IEducation } from '../model/IEducation';
-import { MatDialog, MatDialogConfig } from '@angular/material'
-import { PopupDialogComponent } from '../popup-dialog/popup-dialog.component';
+import { MatDialogConfig } from '@angular/material';
+import { PopupService } from '../services/popup.service';
 
 @Component({
   selector: 'app-education-section',
@@ -12,7 +12,7 @@ export class EducationSectionComponent implements OnInit {
 
   educationEvents : IEducation[] = [];
 
-  constructor(private matDialog: MatDialog) {
+  constructor(private popupService : PopupService) {
     this.educationEvents.push({
       eventHeader:{
         batch:'Fall 2018',
@@ -75,22 +75,23 @@ export class EducationSectionComponent implements OnInit {
       },
       eventLogoUrl: ''
     });
-   }
+  }
 
   ngOnInit() {
   }
 
-  public openMatDialog(){
+  public openExtCurAct() : boolean{
     const matDialogConfig = new MatDialogConfig();
-    matDialogConfig.width = 'fit-content';
-    matDialogConfig.maxWidth = '80%';
-    matDialogConfig.maxHeight= '80%';
-    matDialogConfig.disableClose = false;
-    matDialogConfig.data = {hello:'Hellosdfsadfadsfsdafdsafsadfsdafsadfdsafsadfsdfasd'};
-    // matDialogConfig.hasBackdrop = false;    //Adds the shadow tint on the background of the dialog box
-
-    const matDialogRef = this.matDialog.open(PopupDialogComponent , matDialogConfig);
+    matDialogConfig.data = {hello: 'The is extCurAct'};
+    this.popupService.openMatDialog(matDialogConfig);
+    return false;
   }
 
+  public openUGradProjs() : boolean{
+    const matDialogConfig = new MatDialogConfig();
+    matDialogConfig.data = {hello: 'The is UGradProjs'};
+    this.popupService.openMatDialog(matDialogConfig);
+    return false;
+  }
   
 }

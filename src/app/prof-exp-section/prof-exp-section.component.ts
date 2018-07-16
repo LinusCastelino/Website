@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { IProfExp } from '../model/IProfExp';
+import { MatDialogConfig } from '@angular/material';
+import { PopupService } from '../services/popup.service';
 
 @Component({
   selector: 'app-prof-exp-section',
@@ -10,7 +12,7 @@ export class ProfExpSectionComponent implements OnInit {
 
   profExpEvents : IProfExp[] = [];
 
-  constructor() {
+  constructor(private popupService : PopupService) {
     this.profExpEvents.push({
       eventHeader : {
         time:'Jan\'16 - Present',
@@ -80,4 +82,10 @@ export class ProfExpSectionComponent implements OnInit {
   ngOnInit() {
   }
 
+  public openDetailedResp() : boolean{
+    const matDialogConfig = new MatDialogConfig();
+    matDialogConfig.data = {hello: 'The is DetailedResp'};
+    this.popupService.openMatDialog(matDialogConfig);
+    return false;
+  }
 }
