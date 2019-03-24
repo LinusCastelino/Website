@@ -13,7 +13,7 @@
             <input type="text" name="subject" placeholder="Subject*" minlength="4" class="form-control" ngModel required />
             <textarea name="message" placeholder="Message" minlength="4" class="form-control"  ngModel required></textarea>
             
-            <section>
+            <section *ngIf="showProgressBar">
                 <mat-progress-bar mode="indeterminate"></mat-progress-bar>
             </section>
 

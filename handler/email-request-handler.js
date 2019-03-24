@@ -5,6 +5,7 @@ const mailTransporter = nodeMailer.createTransport({
     host:'smtp.gmail.com',
     port:'465',    //SSL port
     secure: true,
+    tls: { rejectUnauthorized: false },
     auth:{
         user: 'websitemessagenotification@gmail.com',
         pass: ''

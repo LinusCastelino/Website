@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "node server.js",
+    "start": "ng serve",
     "start-dev": "concurrently --kill-others-on-fail \"npm run build-dev\" \"nodemon server.js\"",
     "start-prod": "npm run build-prod && node server.js",
     "build-dev": "ng build --watch",

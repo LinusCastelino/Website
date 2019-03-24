@@ -19,6 +19,7 @@ export class ContactMeSectionComponent implements OnInit {
   socialsInfo: ISocialsInfo[];
   showSuccessMsg = false;
   showFailureMsg = false;
+  showProgressBar = false;
 
   constructor(private mailerService: MailerService) {
     const socials = new SocialsInfo(this.logoImgColor);
@@ -31,6 +32,7 @@ export class ContactMeSectionComponent implements OnInit {
   public sendMessage(contactMeForm: NgForm): void {
     console.log('Inside : ContactMeSectionComponent.sendMessage()');
     // console.log(contactMeForm);
+    this.showProgressBar = true;
 
     this.message = {
       name : contactMeForm.form.controls.name.value,
@@ -44,21 +46,25 @@ export class ContactMeSectionComponent implements OnInit {
     this.mailerService.sendMessage(this.message).subscribe(res => {
         if (res.status === 200) {
           console.log(`Email sent successfully - ${res.text()}`);
+          this.showProgressBar = false;
           this.showSuccessMsg = true;
           this.showFailureMsg = false;
         } else if (res.status === 500 || res.status === 404) {
             console.log(`Error encountered while sending email - ${res.text()}`);
             this.showFailureMsg = true;
+            this.showProgressBar = false;
             this.showSuccessMsg = false;
           } else {
               console.log(`Unknown error encountered while sending email - ${res.text()}`);
               this.showFailureMsg = true;
+              this.showProgressBar = false;
               this.showSuccessMsg = false;
             }
       },
       err => {
         console.log(`Mailer Service failed`);
         this.showFailureMsg = true;
+        this.showProgressBar = false;
         this.showSuccessMsg = false;
       });
   }

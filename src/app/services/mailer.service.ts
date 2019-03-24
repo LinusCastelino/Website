@@ -11,7 +11,7 @@ export class MailerService {
   constructor(private _http: Http) { }
 
   public sendMessage(message: IMessage): Observable<any> {
-    console.log('Inside : MailerService.sendMessage()');
+    // console.log('Inside : MailerService.sendMessage()');
     // console.log(message.name);
     // console.log(message.email);
     // console.log(message.phone);
