@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { PersonalInfo } from '../model/PersonalInfo'
+import { PersonalInfo } from '../model/PersonalInfo';
 
 @Component({
   selector: 'app-profile-section',

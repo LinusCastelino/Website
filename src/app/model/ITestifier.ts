@@ -1,4 +1,4 @@
-export interface ITestifier{
+export interface ITestifier {
     name: string;
     role: string;
     organization: string;

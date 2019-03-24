@@ -10,7 +10,7 @@ export class MailerService {
 
   constructor(private _http: Http) { }
 
-  public sendMessage(message: IMessage) : Observable<any>{
+  public sendMessage(message: IMessage): Observable<any> {
     console.log('Inside : MailerService.sendMessage()');
     // console.log(message.name);
     // console.log(message.email);
@@ -18,6 +18,6 @@ export class MailerService {
     // console.log(message.subject);
     // console.log(message.text);
 
-    return this._http.post('/sendEmail',message)
+    return this._http.post('/sendEmail', message);
   }
 }

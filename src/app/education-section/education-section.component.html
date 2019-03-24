@@ -9,15 +9,28 @@
         <li id="eduEvent" *ngFor="let eduEvent of educationEvents">
           <div id="eventHeader">
             <h5>{{ eduEvent.eventHeader.batch }}</h5>
-            <p *ngFor="let detail of eduEvent.eventHeader.details">{{ detail }}</p>
+            <p *ngFor="let detail of eduEvent.eventHeader.details" innerHTML="{{ detail }}"></p>
           </div>
 
           <div id="eventInfo">
-            <h4>{{ eduEvent.eventInfo.univ }}</h4>
-            <p *ngFor="let detail of eduEvent.eventInfo.details">{{ detail }}</p>
+            <h4 innerHTML="{{ eduEvent.eventInfo.univ }}"></h4>
+            
+            <!-- Events do not get bound to anchor tags when included using innerhtml -->
+            <div *ngIf="eduEvent.eventInfo.univ === 'University of Mumbai'">
+              <p>Major - Computer Engineering</p>
+              <p>Click <a href="https://drive.google.com/file/d/0B40x1VYdbWc8VlBqMVhRMFRoeTQ/view?usp=sharing" target="_blank">here</a> to view Degree Certificate.</p>
+              <p>Click <a href="#" (click)="openUGradProjs()">here</a> to view projects undertaken in undergrad school.</p>
+              <p>Click <a href="#" (click)="openExtCurAct()">here</a> to view extra-curricular activities participated in.</p>
+            </div>
+
+            <div *ngIf="eduEvent.eventInfo.univ != 'University of Mumbai'">
+              <p *ngFor="let detail of eduEvent.eventInfo.details" innerHTML="{{ detail }}"></p>
+            </div>
+            
           </div>
         </li>
       </ul>
     </div>
   </div>
 </div>
+

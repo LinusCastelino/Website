@@ -12,11 +12,15 @@
             <input type="tel" name="phone" placeholder="Phone" class="form-control" ngModel />
             <input type="text" name="subject" placeholder="Subject*" minlength="4" class="form-control" ngModel required />
             <textarea name="message" placeholder="Message" minlength="4" class="form-control"  ngModel required></textarea>
+            
+            <section>
+                <mat-progress-bar mode="indeterminate"></mat-progress-bar>
+            </section>
+
             <button class="btn btn-default" (click)="sendMessage(contactMeForm)" >Submit</button>
           </form>
 
           <br />
-
           <p id="successMsg" *ngIf="showSuccessMsg">
             Thank you for your message. Sent to Linus successfully.
           </p>

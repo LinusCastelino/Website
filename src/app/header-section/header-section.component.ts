@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { IHeaderNav } from '../model/IHeaderNav';
+
 @Component({
   selector: 'app-header-section',
   templateUrl: './header-section.component.html',
@@ -13,28 +14,28 @@ export class HeaderSectionComponent implements OnInit {
     this.headerNavs = new Array();
 
     this.headerNavs.push({
-      title:'Professional Experience',
-      hrefUrl:'profExpContainer'
+      title: 'Professional Experience',
+      hrefUrl: 'profExpContainer'
     });
 
     this.headerNavs.push({
-      title:'Education',
-      hrefUrl:'educationContainer'
+      title: 'Education',
+      hrefUrl: 'educationContainer'
     });
 
     this.headerNavs.push({
-      title:'Skills',
-      hrefUrl:'skillsContainer'
+      title: 'Skills',
+      hrefUrl: 'skillsContainer'
     });
 
     this.headerNavs.push({
-      title:'Testimonials',
-      hrefUrl:'testimonialsContainer'
+      title: 'Testimonials',
+      hrefUrl: 'testimonialsContainer'
     });
 
     this.headerNavs.push({
-      title:'Contact Me',
-      hrefUrl:'contactMeContainer'
+      title: 'Contact Me',
+      hrefUrl: 'contactMeContainer'
     });
    }
 

@@ -15,8 +15,15 @@
           <div id="eventInfo">
             <h4 innerHTML="{{ profExpEvent.event.title }}"></h4>    <!-- Using innerHTML attribute since the strings contain html tags -->
             <ul>
-              <li *ngFor="let desc of profExpEvent.event.desc" innerHTML="{{ desc }}">
-              </li>
+              <div *ngIf="profExpEvent.event.title.match('ToysRUs') !=null">
+                <li>Working as an Oracle A.T.G. Web Commerce developer at T.C.S. for the U.K. and Poland markets of ToysRUs.</li>
+                <li>Click <a href="#" (click)="openDetailedResp()">here</a> for detailed responsibilities.</li>
+                <li>Presented with the <a href="https://drive.google.com/file/d/0B40x1VYdbWc8WGxkQXNkOC11aFE/view?usp=sharing" target="_blank">'iONCommitment'</a> award acknowledging the contributions made towards the project.</li>
+              </div>
+
+              <div *ngIf="profExpEvent.event.title.match('ToysRUs') == null">
+                <li *ngFor="let desc of profExpEvent.event.desc" innerHTML="{{ desc }}"></li>
+              </div>
             </ul>
           </div>
         </li>
