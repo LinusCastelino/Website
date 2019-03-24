@@ -3,7 +3,7 @@ const path = require('path');
 const emailHandler = require('./handler/email-request-handler');
 const bodyParser = require('body-parser');
 
-const port = 9000;    //declaring port on which server will listen
+const port = process.env.PORT || 9000;    //declaring port on which server will listen
 
 const app = express();
 
