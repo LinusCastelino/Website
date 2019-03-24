@@ -14,6 +14,10 @@ app.use(bodyParser.json());
 //Routing all send email requests to email-request-handler
 app.post('/sendEmail',emailHandler);
 
+app.get('/test', (req, res) =>{
+    res.send('Test GET request');
+});
+
 app.get('*',(req, res) =>{  
     res.sendFile(path.join(__dirname,'dist/index.html'));
 });
