@@ -8,7 +8,7 @@ const mailTransporter = nodeMailer.createTransport({
     tls: { rejectUnauthorized: false },
     auth:{
         user: 'websitemessagenotification@gmail.com',
-        pass: ''
+        pass: process.env.EMAIL_SERVER_PWD
     }
 });
 
