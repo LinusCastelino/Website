@@ -25,5 +25,10 @@ hr{
     #profExpEventLogo{
         width: 15vw;
     }
+
+    #profExpTimeline{
+        padding-top: 6vw;
+        padding-bottom: 6vw;
+    }
 }
     
