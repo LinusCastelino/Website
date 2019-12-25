@@ -5,7 +5,22 @@
 
   <div id="profExpContent">
     <div id="profExpTimeline">
-      <ul>
+      
+      <div id="profExpEvent" *ngFor="let profExpEvent of profExpEvents; last as isLast">
+        <img id="profExpEventLogo" src="{{ profExpEvent.eventLogoURL }}" />
+        <h5>{{ profExpEvent.eventHeader.organization }}</h5>
+        <h5>{{ profExpEvent.eventHeader.designation }}</h5>
+        <h6>{{ profExpEvent.eventHeader.role }}</h6>
+        <h6>{{ profExpEvent.eventHeader.period }}</h6>
+
+        <div id="profExpEventDetails" *ngFor="let profExpEventDetails of profExpEvent.event.details">
+          <span innerHTML="{{profExpEventDetails}}"></span>
+        </div>
+
+        <hr *ngIf="!isLast" />    <!-- show horizontal bar only if current event is not last -->
+
+      </div>
+      <!-- <ul>
         <li id="profExpEvent" *ngFor="let profExpEvent of profExpEvents">
           <div id="eventHeader">
             <h5>{{ profExpEvent.eventHeader.time }}</h5>
@@ -14,7 +29,7 @@
 
           <div id="eventInfo">
             <h4 innerHTML="{{ profExpEvent.event.title }}"></h4>    <!-- Using innerHTML attribute since the strings contain html tags -->
-            <ul>
+            <!-- <ul>
               <div *ngIf="profExpEvent.event.title.match('ToysRUs') !=null">
                 <li>Working as an Oracle A.T.G. Web Commerce developer at T.C.S. for the U.K. and Poland markets of ToysRUs.</li>
                 <li>Click <a href="#" (click)="openDetailedResp()">here</a> for detailed responsibilities.</li>
@@ -27,7 +42,7 @@
             </ul>
           </div>
         </li>
-      </ul>
+      </ul> -->
     </div>
   </div>
 </div>

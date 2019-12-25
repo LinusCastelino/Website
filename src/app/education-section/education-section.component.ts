@@ -16,11 +16,15 @@ export class EducationSectionComponent implements OnInit {
   constructor(private popupService: PopupService) {
     this.educationEvents.push({
       eventHeader: {
-        batch: 'Fall 2018',
-        details: []
+        batch: 'Class of 2020 (Fall 2018 student)',
+        details: [
+          '<a href="https://engineering.buffalo.edu/computer-science-engineering.html" target="_blank">University at Buffalo</a>',
+          'Graduate School',
+          'M.S. in Computer Science'
+        ]
       },
       eventInfo: {
-        univ: 'Master\'s in Computer Science Aspirant',
+        univ: 'University at Buffalo',
         details: []
       },
       eventLogoUrl: ''
@@ -32,7 +36,7 @@ export class EducationSectionComponent implements OnInit {
         details: [
           '<a href="http://sfitengg.org/" target="_blank">St. Francis Institute of Technology</a>',
           'Undergraduate School',
-          'Bachelor\'s of Engineering'
+          'B.E. in Compupter Engineering'
         ]
       },
       eventInfo: {
