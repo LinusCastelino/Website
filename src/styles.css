@@ -41,4 +41,12 @@
         padding-top: 6vw;
         padding-bottom: 6vw;
     }
+
+    #headerContainer{
+        display: none;
+    }
+
+    #profileContainer{
+        margin-top: unset !important;
+    }
 }

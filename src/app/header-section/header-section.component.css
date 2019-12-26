@@ -12,7 +12,7 @@
 }
 
 ul{
-    text-align: right;
+    float: right;
 }
 
 li{
@@ -21,11 +21,11 @@ li{
     padding-left: 8px;
     padding-right: 8px;
     border-top: 0.6px solid rgb(252, 19, 89);
-    color:#182153;
     font-weight: 500;
 }
 
 a{
+    color:#182153;
     text-decoration: none;    /*to remove the default underline behavior of anchor tag on hover*/
 }
 
