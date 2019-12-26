@@ -1,13 +1,14 @@
 export interface IEducation {
+    eventLogoURL: string;
+
     eventHeader: {
+        institute: string;
         batch: string;
-        details: string[];
+        degree: string;
     };
 
     eventInfo: {
-        univ: string;
         details: string[];
     };
 
-    eventLogoUrl: string;
 }

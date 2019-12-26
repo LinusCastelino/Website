@@ -4,8 +4,20 @@
   </div>
   
   <div id="educationContent">
-    <div id="eduTimeline">
-      <ul>
+    <div class="timeline">
+      <div id="eduEvent" *ngFor="let eduEvent of educationEvents; last as isLast">
+        <img class="timeline-logo" src="{{ eduEvent.eventLogoURL }}"/>
+        <h5>{{ eduEvent.eventHeader.institute }}</h5>
+        <h5>{{ eduEvent.eventHeader.degree }}</h5>
+        <h6>{{ eduEvent.eventHeader.batch }}</h6>
+
+        <div *ngFor="let eduEventDetails of eduEvent.eventInfo.details">
+          <span innerHTML="{{eduEventDetails}}"></span>
+        </div>
+        
+        <hr *ngIf="!isLast" />    <!-- show horizontal bar only if current event is not last -->
+      </div>
+      <!-- <ul>
         <li id="eduEvent" *ngFor="let eduEvent of educationEvents">
           <div id="eventHeader">
             <h5>{{ eduEvent.eventHeader.batch }}</h5>
@@ -16,7 +28,7 @@
             <h4 innerHTML="{{ eduEvent.eventInfo.univ }}"></h4>
             
             <!-- Events do not get bound to anchor tags when included using innerhtml -->
-            <div *ngIf="eduEvent.eventInfo.univ === 'University of Mumbai'">
+            <!--<div *ngIf="eduEvent.eventInfo.univ === 'University of Mumbai'">
               <p>Major - Computer Engineering</p>
               <p>Click <a href="https://drive.google.com/file/d/0B40x1VYdbWc8VlBqMVhRMFRoeTQ/view?usp=sharing" target="_blank">here</a> to view Degree Certificate.</p>
               <p>Click <a href="#" (click)="openUGradProjs()">here</a> to view projects undertaken in undergrad school.</p>
@@ -29,7 +41,7 @@
             
           </div>
         </li>
-      </ul>
+      </ul> -->
     </div>
   </div>
 </div>

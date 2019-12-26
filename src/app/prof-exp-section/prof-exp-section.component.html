@@ -4,16 +4,16 @@
   </div>
 
   <div id="profExpContent">
-    <div id="profExpTimeline">
+    <div class="timeline">
       
       <div id="profExpEvent" *ngFor="let profExpEvent of profExpEvents; last as isLast">
-        <img id="profExpEventLogo" src="{{ profExpEvent.eventLogoURL }}" />
+        <img class="timeline-logo" src="{{ profExpEvent.eventLogoURL }}" />
         <h5>{{ profExpEvent.eventHeader.organization }}</h5>
         <h5>{{ profExpEvent.eventHeader.designation }}</h5>
         <h6>{{ profExpEvent.eventHeader.role }}</h6>
         <h6>{{ profExpEvent.eventHeader.period }}</h6>
 
-        <div id="profExpEventDetails" *ngFor="let profExpEventDetails of profExpEvent.event.details">
+        <div *ngFor="let profExpEventDetails of profExpEvent.eventInfo.details">
           <span innerHTML="{{profExpEventDetails}}"></span>
         </div>
 

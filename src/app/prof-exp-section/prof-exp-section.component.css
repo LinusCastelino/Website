@@ -1,34 +1,7 @@
-#profExpTimeline{
-    position: relative;
-    text-align: center;
-    padding-top: 2vw;
-    padding-bottom: 2vw;
-    padding-left: 10%;
-    padding-right: 10%;
-}
-
-#profExpEventLogo{
-    width: 6vw;
-    /* border-radius : 50%; */
-    border: 1px solid black;
-}
-
 hr{
     width: 100%;
     margin-top: 2rem;
     margin-bottom: 2rem;
     border-color: rgba(0,0,0,0.2);
-}
-
-/* Smartphones */
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
-    #profExpEventLogo{
-        width: 15vw;
-    }
-
-    #profExpTimeline{
-        padding-top: 6vw;
-        padding-bottom: 6vw;
-    }
 }
     

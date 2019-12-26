@@ -24,7 +24,7 @@ export class ProfExpSectionComponent implements OnInit {
     //       role: '',
     //       period: ''
     //     },
-    //     event:{
+    //     eventInfo:{
     //       details: []
     //     }
     //   }
@@ -37,9 +37,9 @@ export class ProfExpSectionComponent implements OnInit {
           organization: 'Tata Consultancy Services Pvt. Ltd.',
           designation: 'Systems Engineer (Full-Stack Developer)',
           role: 'A.T.G. Developer, E-Commerce - Retail & C.P.G.',
-          period: 'Jan\'16 - Jul\'18'
+          period: 'January 2016 - July 2018'
         },
-        event:{
+        eventInfo:{
           details: [
             'Worked as an Oracle A.T.G. Web Commerce developer, implementing software modules for the U.K. and Poland market ' + 
             'E-Commerce webstores of ToysRUs.',
@@ -71,9 +71,9 @@ export class ProfExpSectionComponent implements OnInit {
           organization: 'Salesforce.com, Inc.',
           designation: 'Software Developer - Intern',
           role: 'Salesforce Cloud Developer - BizTech Org',
-          period: 'May\'19 - Aug\'19'
+          period: 'May 2019 - August 2019'
         },
-        event:{
+        eventInfo:{
           details: [
             'Contributed is developing software modules and implementing spring stories for the Salesforce in-house Real Estate ' + 
             'Management System (REMS).',
@@ -90,9 +90,9 @@ export class ProfExpSectionComponent implements OnInit {
           organization: 'SUNY Research Foundation',
           designation: 'Research Assistant (University at Buffalo)',
           role: 'Full-Stack Developer',
-          period: 'Jan\'19 - Jan\'20'
+          period: 'January 2019 - January 2020'
         },
-        event:{
+        eventInfo:{
           details: [
             'Working as a Research Assistant and a Full Stack developer for OneDataShare Project - a research project funded by NSF ' + 
             'and IBM aimed at developing an MFT (Managed File Transfer system) to enhance and improve high-volume data sharing across ' + 

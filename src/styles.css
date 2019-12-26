@@ -16,3 +16,29 @@
     margin-bottom: 0%;
     font-size: 25px;
 }
+
+.timeline-logo{
+    width: 6vw;
+    border: 1px solid black;
+}
+
+.timeline{
+    position: relative;
+    text-align: center;
+    padding-top: 2vw;
+    padding-bottom: 2vw;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+/* Smartphones */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    .timeline-logo{
+        width: 15vw;
+    }
+
+    .timeline{
+        padding-top: 6vw;
+        padding-bottom: 6vw;
+    }
+}
