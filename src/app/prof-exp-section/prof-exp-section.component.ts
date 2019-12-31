@@ -37,7 +37,8 @@ export class ProfExpSectionComponent implements OnInit {
           organization: 'Tata Consultancy Services Pvt. Ltd.',
           designation: 'Systems Engineer (Full-Stack Developer)',
           role: 'A.T.G. Developer, E-Commerce - Retail & C.P.G.',
-          period: 'January 2016 - July 2018'
+          period: 'January 2016 - July 2018',
+          location : 'Mumbai, India'
         },
         eventInfo:{
           details: [
@@ -71,7 +72,8 @@ export class ProfExpSectionComponent implements OnInit {
           organization: 'Salesforce.com, Inc.',
           designation: 'Software Developer - Intern',
           role: 'Salesforce Cloud Developer - BizTech Org',
-          period: 'May 2019 - August 2019'
+          period: 'May 2019 - August 2019',
+          location : 'Indianapolis, USA'
         },
         eventInfo:{
           details: [
@@ -90,11 +92,12 @@ export class ProfExpSectionComponent implements OnInit {
           organization: 'SUNY Research Foundation',
           designation: 'Research Assistant (University at Buffalo)',
           role: 'Full-Stack Developer',
-          period: 'January 2019 - January 2020'
+          period: 'January 2019 - January 2020',
+          location: 'Buffalo, USA'
         },
         eventInfo:{
           details: [
-            'Working as a Research Assistant and a Full Stack developer for OneDataShare Project - a research project funded by NSF ' + 
+            'Working as a Research Assistant and a Full Stack developer for <a href="https://www.onedatashare.org">OneDataShare</a> Project - a research project funded by NSF ' + 
             'and IBM aimed at developing an MFT (Managed File Transfer system) to enhance and improve high-volume data sharing across ' + 
             'different protocols.'
           ]

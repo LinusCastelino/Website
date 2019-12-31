@@ -12,6 +12,7 @@
         <h5>{{ profExpEvent.eventHeader.designation }}</h5>
         <h6>{{ profExpEvent.eventHeader.role }}</h6>
         <h6>{{ profExpEvent.eventHeader.period }}</h6>
+        <h6>{{ profExpEvent.eventHeader.location }}</h6>
 
         <div *ngFor="let profExpEventDetails of profExpEvent.eventInfo.details">
           <span innerHTML="{{profExpEventDetails}}"></span>

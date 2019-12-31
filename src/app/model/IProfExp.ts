@@ -6,6 +6,7 @@ export interface IProfExp {
         designation : string;
         role: string;
         period : string;
+        location : string;
     }
 
     eventInfo:{
