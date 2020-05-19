@@ -38,7 +38,7 @@ export class ProfExpSectionComponent implements OnInit {
           designation: 'Systems Engineer (Full-Stack Developer)',
           role: 'A.T.G. Developer, E-Commerce - Retail & C.P.G.',
           period: 'January 2016 - July 2018',
-          location : 'Mumbai, India'
+          location : 'Mumbai, Maharashtra, India'
         },
         eventInfo:{
           details: [
@@ -73,7 +73,7 @@ export class ProfExpSectionComponent implements OnInit {
           designation: 'Software Developer - Intern',
           role: 'Salesforce Cloud Developer - BizTech Org',
           period: 'May 2019 - August 2019',
-          location : 'Indianapolis, USA'
+          location : 'Indianapolis, IN, USA'
         },
         eventInfo:{
           details: [
@@ -93,13 +93,31 @@ export class ProfExpSectionComponent implements OnInit {
           designation: 'Research Assistant (University at Buffalo)',
           role: 'Full-Stack Developer',
           period: 'January 2019 - January 2020',
-          location: 'Buffalo, USA'
+          location: 'Buffalo, NY, USA'
         },
         eventInfo:{
           details: [
             'Working as a Research Assistant and a Full Stack developer for <a href="https://www.onedatashare.org">OneDataShare</a> Project - a research project funded by NSF ' + 
             'and IBM aimed at developing an MFT (Managed File Transfer system) to enhance and improve high-volume data sharing across ' + 
             'different protocols.'
+          ]
+        }
+      }
+    );
+
+    this.profExpEvents.unshift(
+      {
+        eventLogoURL: '../../assets/images/oci-logo.jpg',
+        eventHeader:{
+          organization: 'Oracle America, Inc.',
+          designation: 'Member of Technical Staff',
+          role: 'Software Development Engineer 2',
+          period: 'February 2020 - Present',
+          location: 'Seattle, WA, USA'
+        },
+        eventInfo:{
+          details: [
+            'Working as an SDE2 at Oracle Cloud Infrastructure (OCI) for the OCI Next Layer Services (NLS).'
           ]
         }
       }
